@@ -1,10 +1,10 @@
 <template>
-  <NuxtLink :to="'/articles/' + path + '/'">
+  <a :href="'/articles/' + path + '/'">
     <div class="blog_card">
       <h2>> {{ $fetchState.pending ? "Loading..." : title }}</h2>
       <p>{{ ($fetchState.pending && description) ? "..." : description }}</p>
     </div>
-  </NuxtLink>
+  </a>
 </template>
 
 <script>
