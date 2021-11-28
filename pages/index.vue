@@ -19,7 +19,7 @@ export default {
 			],
 
 			posts: [
-				{ path: "hello-world" }
+				{ path: "/hello-world" }
 			]
 		}
 	}
