@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/", {data:[{}],fetch:{"BlogCard:0":{_error:{message:"\u002Farticles\u002Fhello-world\u002F not found",statusCode:500}}},mutations:void 0});
