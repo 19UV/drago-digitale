@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://drago-digitale.com/sitemap.xml
+Sitemap: https://drago-digitale.com/sitemap.xml
