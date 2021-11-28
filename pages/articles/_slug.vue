@@ -23,8 +23,7 @@ export default {
 	data: () => {
 		return {
 			links: [
-				{ name: "Home", path: "/", same: true },
-				{ name: "Blog Posts", path: "/blog", same: true }
+				{ name: "Home", path: "/", same: true }
 			]
 		}
 	}

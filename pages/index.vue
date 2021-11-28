@@ -2,8 +2,11 @@
   <div class="wrapper">
     <Logo />
     <Navigation :links="links" />
+    </br>
 
-    <h2>Hello World!</h2>
+    <div v-for="post in posts" :key="post.id">
+      <BlogCard :title="post.title" :content="post.content" :path="post.path" />
+    </div>
   </div>
 </template>
 
@@ -12,8 +15,11 @@ export default {
 	data: () => {
 		return {
 			links: [
-				{ name: "Blog Posts", path: "/blog", same: true },
 				{ name: "Source Code", path: "https://github.com/19UV/drago-digitale", external: true }
+			],
+
+			posts: [
+				{ path: "hello-world" }
 			]
 		}
 	}
