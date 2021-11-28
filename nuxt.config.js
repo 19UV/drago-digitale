@@ -2,10 +2,6 @@ export default {
 	// Target: https://go.nuxtjs.dev/config-target
 	target: "static",
 
-	router: {
-		base: "/drago-digitale/"
-	},
-
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	head: {
 		title: "Drago Digitale",

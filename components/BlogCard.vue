@@ -1,5 +1,5 @@
 <template>
-  <a :href="'/drago-digitale/articles/' + path + '/'">
+  <a :href="'/articles/' + path + '/'">
     <div class="blog_card">
       <h2>> {{ $fetchState.pending ? "Loading..." : title }}</h2>
       <p>{{ ($fetchState.pending && description) ? "..." : description }}</p>
