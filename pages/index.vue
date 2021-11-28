@@ -1,10 +1,10 @@
 <template>
-	<div class="wrapper">
-		<Logo />
-		<Navigation :links="links" />
+  <div class="wrapper">
+    <Logo />
+    <Navigation :links="links" />
 
-		<h2>Hello World!</h2>
-	</div>
+    <h2>Hello World!</h2>
+  </div>
 </template>
 
 <script>

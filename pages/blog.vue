@@ -1,14 +1,14 @@
 <template>
-	<div class="wrapper">
-		<Logo addition="Blog" />
-		<Navigation :links="links" />
+  <div class="wrapper">
+    <Logo addition="Blog" />
+    <Navigation :links="links" />
 
-		</br>
+    </br>
 
-		<div v-for="post in posts" :key="post.id">
-			<BlogCard :title="post.title" :content="post.content" :path="post.path" />
-		</div>
-	</div>
+    <div v-for="post in posts" :key="post.id">
+      <BlogCard :title="post.title" :content="post.content" :path="post.path" />
+    </div>
+  </div>
 </template>
 
 <script>

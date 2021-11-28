@@ -1,15 +1,15 @@
 <template>
-	<div class="wrapper">
-		<div class="heading">
-			<h1>> {{ article.title }}</h1>
-			<p><i>&emsp; {{ article.date }}</i></p>
-		</div>
-		<Navigation :links="links" />
+  <div class="wrapper">
+    <div class="heading">
+      <h1>> {{ article.title }}</h1>
+      <p><i>&emsp; {{ article.date }}</i></p>
+    </div>
+    <Navigation :links="links" />
 
-		</br>
+    </br>
 
-		<nuxt-content :document="article" />
-	</div>
+    <nuxt-content :document="article" />
+  </div>
 </template>
 
 <script>
