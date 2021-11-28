@@ -49,7 +49,9 @@ jobs:
         run: npm run lint
 
       - name: Build
-        run: num run generate
+        run: |
+          npm run build
+          npm run generate
 
       - name: Publish
         uses: peaceiris/actions-gh-pages@v3
