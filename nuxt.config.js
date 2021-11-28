@@ -50,7 +50,10 @@ export default {
 	content: {},
 
 	sitemap: {
-		hostname: "http://drago-digitale.com"
+		hostname: "http://drago-digitale.com",
+		routes: [
+			"/articles/hello-world"
+		]
 	},
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build
