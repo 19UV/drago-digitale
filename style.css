@@ -1,0 +1,53 @@
+/* https://coolors.co/a5a5a5-cccccc-35ff69-161b33-0d0c1d-32936f */
+
+html, body {
+	padding: 10px;
+	
+	background-color: #A5A5A5
+}
+
+a:link, a:visited {
+	color: #32936F;
+	text-decoration: none;
+	
+	font-weight: bold;
+}
+
+.wrapper {
+	width: 50%;
+	min-width: 600px;
+	
+	padding: 10px;
+	padding-left: 25px;
+	margin: auto;
+	
+	background-color: #0D0C1D;
+	border: 5px solid #32936F;
+	
+	font-family: 'Source Code Pro', monospace;
+	color: #32936F;
+}
+
+.blog_card {
+	padding: 0px;
+	padding-left: 10px;
+	margin: 0px;
+	margin-bottom: 15px;
+	
+	border: 2px solid #32936F;
+}
+
+.nav {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.nav li {
+	display: inline
+}
+
+.nav a {
+	display:inline-block;
+	padding: 10px;
+}
