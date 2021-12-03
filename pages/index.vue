@@ -7,6 +7,8 @@
     <div v-for="post in posts" :key="post.id">
       <BlogCard :title="post.title" :content="post.content" :path="post.path" />
     </div>
+	
+	<Socials />
   </div>
 </template>
 
