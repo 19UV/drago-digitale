@@ -52,7 +52,7 @@ export default {
 	content: {},
 
 	sitemap: {
-		hostname: "http://drago-digitale.com",
+		hostname: "https://drago-digitale.com",
 		routes: [
 			"/articles/hello-world"
 		]
