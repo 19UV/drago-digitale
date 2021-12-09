@@ -18,8 +18,12 @@ export default {
 		link: [
 			{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
 			{ rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" },
-			{ rel: "stylesheet", href: "https://use.fontawesome.com/releases/v5.5.0/css/all.css",
-			  integrity: "sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU", crossorigin: "anynymous"}
+			{
+				rel: "stylesheet",
+				href: "https://use.fontawesome.com/releases/v5.5.0/css/all.css",
+				integrity: "sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU",
+				crossorigin: "anynymous"
+			}
 		]
 	},
 
