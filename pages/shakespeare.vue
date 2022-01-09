@@ -24,7 +24,7 @@ function randomIn (array) {
 
 export default {
 	async asyncData ({ $axios }) {
-		const response = await $axios.$get("./shakespeare_chain.json")
+		const response = await $axios.$get("shakespeare_chain.json")
 		if (!response) {
 			throw new Error("Unable to Retrieve Sonnets")
 		}
