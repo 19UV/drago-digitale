@@ -65,7 +65,8 @@ export default {
 	sitemap: {
 		hostname: "https://drago-digitale.com",
 		routes: [
-			"/articles/hello-world"
+			"/articles/hello-world",
+			"/articles/procedural-shakespeare"
 		]
 	},
 
