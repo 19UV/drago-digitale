@@ -15,6 +15,9 @@ on:
       - '.github/workflows/**'
   workflow_dispatch:
 
+env:
+  NODE_ENV: production
+
 jobs:
   ci:
     runs-on: ${{ matrix.os }}
