@@ -2,6 +2,10 @@ export default {
 	// Target: https://go.nuxtjs.dev/config-target
 	target: "static",
 
+	env: {
+		NODE_ENV: process.env.GITHUB_ACTIONS ? "production" : "development"
+	},
+
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	head: {
 		title: "Drago Digitale",
