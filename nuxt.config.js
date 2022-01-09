@@ -49,11 +49,18 @@ export default {
 	modules: [
 		// https://go.nuxtjs.dev/content
 		"@nuxt/content",
-		"@nuxtjs/sitemap"
+		"@nuxtjs/sitemap",
+		"@nuxtjs/axios"
 	],
 
 	// Content module configuration: https://go.nuxtjs.dev/config-content
-	content: {},
+	content: {
+		markdown: {
+			prism: {
+				theme: "prism-themes/themes/prism-dracula.css"
+			}
+		}
+	},
 
 	sitemap: {
 		hostname: "https://drago-digitale.com",

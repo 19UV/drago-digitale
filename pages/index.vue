@@ -21,6 +21,7 @@ export default {
 			],
 
 			posts: [
+				{ path: "procedural-shakespeare" },
 				{ path: "hello-world" }
 			]
 		}
