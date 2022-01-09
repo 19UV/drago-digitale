@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/", {data:[{}],fetch:{"BlogCard:0":{title:"Procedural Shakespeare",description:"Making a program write Shakespeare to annoy my English teacher."},"BlogCard:1":{title:"Hello World!",description:"Bought this domain, figured I'd put it to use."}},mutations:void 0});

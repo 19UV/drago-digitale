@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/", {data:[{}],fetch:{"BlogCard:0":{title:"Hello World!",description:"Bought this domain, figured I'd put it to use."}},mutations:void 0});
