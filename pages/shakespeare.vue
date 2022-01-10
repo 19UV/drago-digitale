@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import markov_data from "~/static/shakespeare_chain.json"
+import markovData from "~/static/shakespeare_chain.json"
 
 function randomIn (array) {
 	return array[Math.floor(Math.random() * array.length)]
@@ -31,7 +31,7 @@ export default {
 				{ name: "Home", path: "/", same: true },
 				{ name: "Article", path: "/articles/procedural-shakespeare", same: true }
 			],
-			...markov_data,
+			...markovData,
 			quote: ""
 		}
 	},
