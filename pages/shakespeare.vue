@@ -18,27 +18,20 @@
 </template>
 
 <script>
+import markov_data from "~/static/shakespeare_chain.json"
+
 function randomIn (array) {
 	return array[Math.floor(Math.random() * array.length)]
 }
 
 export default {
-	async asyncData ({ $axios }) {
-		const response = await $axios.$get("shakespeare_chain.json")
-		if (!response) {
-			throw new Error("Unable to Retrieve Sonnets")
-		}
-		const { chain, starters } = response
-
-		return { chain, starters }
-	},
-
 	data: () => {
 		return {
 			links: [
 				{ name: "Home", path: "/", same: true },
 				{ name: "Article", path: "/articles/procedural-shakespeare", same: true }
 			],
+			...markov_data,
 			quote: ""
 		}
 	},
