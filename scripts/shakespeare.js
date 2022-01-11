@@ -4,7 +4,7 @@ const fs = require("fs")
 const axios = require("axios")
 
 const URL = "https://www.gutenberg.org/cache/epub/1041/pg1041.txt"
-const SAMPLE_SIZE = 2
+const SAMPLE_SIZE = 1
 
 function isRomanNumeral (line) {
 	const numerals = ["I", "V", "X", "L", "C", "D", "M"]
