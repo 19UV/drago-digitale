@@ -1,0 +1,41 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+  <head>
+    <title>Drago Digitale</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1"><meta data-n-head="ssr" data-hid="author" name="author" content="19UV"><meta data-n-head="ssr" data-hid="description" name="description" content="My personal blog; Programming, Graphics, etc"><meta data-n-head="ssr" name="format-detection" content="telephone=no"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"><link data-n-head="ssr" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anynymous"><link rel="preload" href="/_nuxt/e80f6e4.js" as="script"><link rel="preload" href="/_nuxt/37ef269.js" as="script"><link rel="preload" href="/_nuxt/4e40ce4.js" as="script"><link rel="preload" href="/_nuxt/c74ac84.js" as="script"><link rel="preload" href="/_nuxt/db5e8ef.js" as="script"><style data-vue-ssr-id="2c80b33a:0 0a1edf6e:0 fa7ff0ca:0">body,html{padding:10px;background-color:#a5a5a5}a:link,a:visited{color:#32936f;text-decoration:none;font-weight:700}.noselect{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.wrapper{width:50%;min-width:600px;padding:10px 25px;margin:auto;border:5px solid #32936f}.wrapper,button{background-color:#0d0c1d;font-family:"Source Code Pro",monospace;color:#32936f}button{border:3px solid #32936f;margin:0 auto;padding:5px;display:block;font-weight:700}button:hover{background-color:#32936f;color:#0d0c1d}.video_wrapper{float:none;clear:both;width:100%;position:relative;padding-bottom:56.25%;padding-top:25px;height:0}.video_wrapper embed,.video_wrapper iframe,.video_wrapper object{position:absolute;top:0;left:0;width:100%;height:100%}.blog_card{padding:0 0 0 10px;margin:0 0 15px;border:2px solid #32936f}.nav{margin:0;padding:0;text-align:center}.nav li{display:inline}.nav a{display:inline-block;padding:10px}code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:0 0;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#282a36}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#6272a4}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#ff79c6}.token.boolean,.token.number{color:#bd93f9}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#50fa7b}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#f1fa8c}.token.keyword{color:#8be9fd}.token.important,.token.regex{color:#ffb86c}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#000;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}</style><link rel="preload" href="/_nuxt/static/1643676569/articles/wordle-solver/state.js" as="script"><link rel="preload" href="/_nuxt/static/1643676569/articles/wordle-solver/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1643676569/manifest.js" as="script">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div class="wrapper"><div class="heading"><h1>> Wordle Solver</h1> <p><i>  01/30/2022</i></p></div> <ul class="nav"><li><a href="/" class="nuxt-link-active">
+      [Home]
+    </a></li><li><a href="/wordle_solver">
+      [Live Demo]
+    </a></li></ul> <br> <div class="nuxt-content"><h2 id="a-short-story"><a href="#a-short-story" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>A Short Story</h2>
+<p>First off, where did <a href="https://www.powerlanguage.co.uk/wordle/" rel="nofollow noopener noreferrer" target="_blank">[Wordle]</a> even come from? In one
+day, I went from not knowing anything about it, to learning about it from my English teacher,
+to my maths teacher telling us about him solving that day's wordle in 3 tries.</p>
+<p>So after spending 15 seconds stairing at the screen, I got to work writing a program to play
+it for me.</p>
+<h2 id="step-1-how-does-wordle-work"><a href="#step-1-how-does-wordle-work" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>Step 1: How Does Wordle Work?</h2>
+<p>Wordle is very interesting. You would assume that when you submit a word, it would send a
+request to the central server for it to actually be checked. That way, you won't be able
+to see the actual word before solving, and you won't be able to tell future words.</p>
+<p>It doesn't work that way. It turns out that the word chosen is just selected from a word list,
+and that word list (actually 2; one with actual words and another with strange words like "aahed")
+is located in main.js. The selection also isn't even random, its based on the time. This means
+that I can tell you the word on any given day after launch. This also means that I now have the
+full word list (located <a href="https://drago-digitale.com/wordle_list.json" rel="nofollow noopener noreferrer" target="_blank">[here]</a>).</p>
+<p>I love security.</p>
+<h2 id="step-2-implimenting-the-solver"><a href="#step-2-implimenting-the-solver" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>Step 2: Implimenting the Solver</h2>
+<p>The solver should do three things on repeat. Output a word, get input, and remove all invalid words.
+Starting out, we just take the word list found (see above) and print out a random word (I just use
+the word at index 0 which just so happens to be cigar). We get the response
+(a series of 5 green/yellow/grays), and filter our current word list respectively. Here is the logic.</p>
+<p>For every green: Require that every word in the word list has that letter at the position of the
+green in the guess.
+For every yellow: Require that every word in the word list has that letter & isn't at the position
+of yellow in the guess.
+For every gray: First check to be sure that the corresponding letter isn't somewhere else in the guess
+(in which case treat it like its yellow), if not, remove all words where that letter is present.</p>
+<p>And then we just get input, and parse!</p>
+<p>~ 19UV</p></div></div></div></div><script defer src="/_nuxt/static/1643676569/articles/wordle-solver/state.js"></script><script src="/_nuxt/e80f6e4.js" defer></script><script src="/_nuxt/db5e8ef.js" defer></script><script src="/_nuxt/37ef269.js" defer></script><script src="/_nuxt/4e40ce4.js" defer></script><script src="/_nuxt/c74ac84.js" defer></script>
+  </body>
+</html>

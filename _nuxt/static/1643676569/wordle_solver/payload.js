@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/wordle_solver", {data:[{}],fetch:{},mutations:void 0});
