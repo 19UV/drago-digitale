@@ -7,10 +7,10 @@ const axios = require("axios")
 
 const BASE_URL = "https://www.powerlanguage.co.uk/wordle/"
 const MAIN_JS_REGEX = /main.\w+.js/
-const WORD_LIST_LA_REGEX = new RegExp("La=[['\",a-z]+]") // Real Words
-const WORD_LIST_TA_REGEX = new RegExp("Ta=[['\",a-z]+]") // Test Words
+const WORD_LIST_LA_REGEX = /La=[['",a-z]+]/ // Real Words
+const WORD_LIST_TA_REGEX = /Ta=[['",a-z]+]/ // Test Words
 
-(async function () {
+async function mainProcess () {
 	let response
 	try {
 		response = await axios.get(BASE_URL)
@@ -43,4 +43,5 @@ const WORD_LIST_TA_REGEX = new RegExp("Ta=[['\",a-z]+]") // Test Words
 		}
 		console.log("Write to wordle_list successful")
 	})
-})()
+}
+mainProcess()
