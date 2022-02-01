@@ -21,6 +21,7 @@ export default {
 			],
 
 			posts: [
+				{ path: "wordle-solver" },
 				{ path: "procedural-shakespeare" },
 				{ path: "hello-world" }
 			]

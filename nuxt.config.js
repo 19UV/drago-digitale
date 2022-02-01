@@ -70,7 +70,8 @@ export default {
 		hostname: "https://drago-digitale.com",
 		routes: [
 			"/articles/hello-world",
-			"/articles/procedural-shakespeare"
+			"/articles/procedural-shakespeare",
+			"/articles/wordle-solver"
 		]
 	},
 

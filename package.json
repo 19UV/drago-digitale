@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "prebuild": "node scripts/shakespeare.js",
+    "prebuild": "node scripts/shakespeare.js && node scripts/wordle.js",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",

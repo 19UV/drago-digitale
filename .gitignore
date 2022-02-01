@@ -89,5 +89,9 @@ sw.*
 # Vim swap files
 *.swp
 
+# Remove VIM Tempfiles
+**/*~
+
 # Prebuild outputs
 static/shakespeare_chain.json
+static/wordle_list.json
